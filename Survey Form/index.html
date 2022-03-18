@@ -1,0 +1,96 @@
+<<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <title>Survey Form</title>
+    </head>
+    <body >
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <div class="text-center">
+        <h1 id="title">Computer Science Survey Form</h1>
+        <p id="description">Thank you filling out the computer science form. </p>
+        </div>
+
+        <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        
+
+        <label for="email" id="email-label">Email address:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+
+        <label for="age" id="number-label">Age:</label>
+        <input type="number" id="number" name="age" min="16" max="99" placeholder="Age">
+        
+
+        <label for="job">Jobs:</label>
+        <select name="job" id="dropdown" name="role" required>
+            <option value="unknown">Choose a job title</option>
+            <option value="HTML Email Engineer">HTML Email Engineer</option>
+            <option value="Front End Engineer">Front End Engineer</option>
+            <option value="Backend Engineer">Backend Engineer</option>
+            <option value="Full Stack Engineer">Full Stack Engineer</option>
+            <option value="Machine Learning Engineer">Machine Learning Enginer</option>
+        </select>
+
+        <p class="experience-title">Best describe your level of experience.</p>
+
+    <div class="alignment">   
+
+        <div class="radiobox-container">
+        <input type="radio" id="senior" name="occupation" value="Senior Level">
+        <label for="senior">Senior Level</label>
+        
+        
+        <input type="radio" id="middle" name="occupation" value="Middle Level">
+        <label for="middle">Middle Level</label>
+        
+        
+        <input type="radio" id="entry" name="occupation" value="Entry Level">
+        <label for="entry">Entry Level</label> 
+        </div>   
+
+    </div> 
+
+        
+        <p class="career-title">What is your further career plans?</p>
+
+    <div class="alignment">
+
+        <div class="alignment">
+        <input type="checkbox" id="entrepreneur" name="entrepreneur" value="entrepreneur">
+        <label for="entrepreneur">Start a company</label>
+        </div>
+        
+        <div class="alignment">
+        <input type="checkbox" id="corporation" name="corporation" value="corporation">
+        <label for="corporation">Work for a company</label>
+        </div>
+
+        <div class="alignment">
+        <input type="checkbox" id="freelance"  name="freelance" value="freelance">
+        <label for="freelance">Freelance development</label>
+        </div>
+     </div>   
+
+        <label for="comments">Comments</label>
+        <textarea id="textbox" name="comment" rows="4" cols="50">
+        </textarea>
+
+        <button type="submit" id="submit">Submit</button>
+        </form>
+    
+
+
+
+       
+    </body>
+</html>
